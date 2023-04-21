@@ -29,6 +29,12 @@ const studentSchema = new mongoose.Schema({
     },
     //Add Child Referencing For Subjects Here. 
     // subjects: []
+    Subjects:[
+        {
+            type:Schema.Type.objectId,
+            ref:'Subject'
+        }
+    ]
 });
 
 // Create the models
