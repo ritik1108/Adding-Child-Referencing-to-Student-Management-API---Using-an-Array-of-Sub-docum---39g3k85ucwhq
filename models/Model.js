@@ -30,7 +30,7 @@ const studentSchema = new mongoose.Schema({
     },
     //Add Child Referencing For Subjects Here. 
     // subjects: []
-    Subjects:[
+    subjects:[
         {
             type:Schema.Type.objectId,
             ref:'Subject'
