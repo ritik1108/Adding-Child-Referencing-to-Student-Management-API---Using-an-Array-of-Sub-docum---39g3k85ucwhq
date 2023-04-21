@@ -1,6 +1,6 @@
 // Import Mongoose
 const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 // Subject Schema
 const subjectSchema = new mongoose.Schema({
@@ -30,10 +30,10 @@ const studentSchema = new mongoose.Schema({
     },
     //Add Child Referencing For Subjects Here. 
     // subjects: []
-    subjects:[
+    subjects: [
         {
-            type:Schema.Type.objectId,
-            ref:'Subject'
+            type: Schema.Types.ObjectId,
+            ref: 'Subject'
         }
     ]
 });
