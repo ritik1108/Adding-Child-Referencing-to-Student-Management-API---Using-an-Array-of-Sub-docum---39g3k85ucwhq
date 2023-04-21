@@ -1,5 +1,6 @@
 // Import Mongoose
 const mongoose = require('mongoose');
+const {Schema} = mongoose;
 
 // Subject Schema
 const subjectSchema = new mongoose.Schema({
